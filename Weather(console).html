@@ -80,7 +80,7 @@
                 cont2.appendChild(details)
                 cont.appendChild(container)
                 var city = data[data.indexOf(element)].capital
-                const url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=3c1145541f4dd4f86ad50a2697490b1b";
+                const url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=3c1145541f4dd4f86ad50a2697490b1b";
                 async function getweather() {
                     const resp = await fetch(url)
                     const weather_data = await resp.json();
